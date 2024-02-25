@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    background-image: url(../resources/img/chule.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080;
+}
+
+
+/* ---------- NAV ---------- */
+.navegacion {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+/* Selector combinado entre clase y etiqueta */
+.navegacion ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    margin: .8rem .8rem;
+
+}
+
+.navegacion ul li a {
+    color: white;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.titulo {
+    display: flex;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.seccion1-index {
+    height: 600px;
+}
+
+
+.seccion1-index .parrafo h2 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.videos {
+    display: flex;
+    height: 780px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+
+}
+
+.pie h3 {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+/* galeria */
+
+.main-galeria h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    margin: 30px;
+}
+
+.galeria-imagenes {
+    display: grid;
+    align-items: center;
+    row-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    margin: 50px;
+}
+
+.galeria-imagenes img {
+    display: grid;
+    width: 260px;
+    height: 130px;
+    padding: 30px;
+
+}
+
+/* -------------noticias------------ */
+
+.noticias .imagen-grande img {
+    width: 400px;
+    height: 700px;
+}
+
+.noticias h2 {
+    color: white;
+    background-color: black;
+}
+
+.noticias img {
+    height: 300px;
+}
+
+/* ---------- grilla noticias---------- */
+
+.noticias {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: .5fr .5fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "imagen-grande imagen-grande img-1 img-2"
+        "imagen-grande imagen-grande img-3 img-4";
+    margin: 10px;
+}
+
+.imagen-grande {
+    grid-area: imagen-grande;
+}
+
+.img-1 {
+    grid-area: img-1;
+}
+
+.img-2 {
+    grid-area: img-2;
+}
+
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+/* responsive noticias */
+
+
+/*---------- socios----------- */
+.socios h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+}
+
+.login {
+    display: flex;
+    align-items: baseline;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.login .mb-3 {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+}
+
+.asociate {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin: 10px;
+
+}
+
+.asociate .col-md-4 {
+    color: white;
+    font-size: 25px;
+    background-color: black;
+}
