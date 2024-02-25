@@ -220,7 +220,29 @@ body {
 .img-4 {
     grid-area: img-4;
 }
-/* responsive noticias */
+
+/* responsive noticias-mobile last */
+@media (max-width:1614px) {
+    .navegacion ul {
+        width: 100vw;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1614px) {
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(1, .5fr);
+        grid-template-areas:
+            "imagen-grande"
+            "imagen-grande"
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4";
+    }
+}
+
 
 
 /*---------- socios----------- */
