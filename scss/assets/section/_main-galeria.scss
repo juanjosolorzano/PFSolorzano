@@ -1,31 +1,8 @@
 .navegacion {
   font-style: sans serif;
   text-transform: uppercase;
-  font-size: 20px;
-  background-color: rgb(0, 174, 255);
-
-  ul {
-    background-color: rgb(36, 95, 204);
-  }
-
-  li {
-    &:hover {
-      background-color: white;
-    }
-
-    a {
-      color: white;
-    }
-
-  }
-
-}
-
-.main {
-  display: grid;
-  background-color: rgb(19, 137, 215);
-}
-
+  font-size: 20px;}
+  
 .titulo {
   display: flex;
   text-transform: uppercase;
@@ -46,24 +23,21 @@
   justify-items: center;
 }
 
-
 .foto img {
 
-  width: 250px;
-  height: 155px;
-}
+  width: 220px;
+  height: 130px;
+  border-radius: 25px;
+  border: solid 2px;
+  color: white;}
+
+  .foto img:hover {
+     filter:brightness(120%);
+     color: aqua;
+  }
+
+ 
 
 
 
 
-
-
-
-
-
-
-
-
-.footer {
-  grid-area: footer;
-}

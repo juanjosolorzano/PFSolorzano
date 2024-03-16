@@ -10,18 +10,45 @@
     margin: 20px;
 }
 .article {
+
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
-    grid-template-columns: 0.3fr 0.9fr 0.5fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "aside comienzos comienzos"
-      "aside titulos titulos"
-      "aside el-estadio el-estadio";
-  }
+      "aside comienzos"
+      "aside titulos"
+      "aside el-estadio";
+  
   .titulos { grid-area: titulos; }
   .comienzos { grid-area: comienzos; }
   .el-estadio { grid-area: el-estadio; }
   .aside { grid-area: aside; }
+
+  img{
+    width: 400px;
+    height: 700px;
+  }
+}
+@media (max-width:1330px){
+  .article img p{
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr ; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "aside"
+      "comienzos"
+      "titulos"
+      "el-estadio";
+}
+.article img{
+  width: 450px;
+  height: 600px;
+}}
+
