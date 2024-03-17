@@ -120,6 +120,7 @@ article h2 {
 @media (max-width: 1024px) {
   .footer .grupo1 {
     width: 100%;
+    margin: auto;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 35px;
     padding: 35px 0px;
@@ -172,37 +173,34 @@ article h2 {
   margin: 20px; }
 
 .article {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "aside comienzos" "aside titulos" "aside el-estadio"; }
+  grid-template-areas: " comienzos comienzos comienzos" " titulos titulos titulos " "el-estadio el-estadio el-estadio"; }
   .article .titulos {
     grid-area: titulos; }
   .article .comienzos {
     grid-area: comienzos; }
   .article .el-estadio {
     grid-area: el-estadio; }
+  .article .presente {
+    grid-area: presente; }
   .article .aside {
     grid-area: aside; }
-  .article img {
-    width: 400px;
-    height: 700px; }
+  .article .aside2 {
+    grid-area: aside1; }
 
-@media (max-width: 1330px) {
-  .article img p {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "aside" "comienzos" "titulos" "el-estadio"; }
-  .article img {
-    width: 450px;
-    height: 600px; } }
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  margin: 5px; }
 
 .titulo {
   display: flex;
