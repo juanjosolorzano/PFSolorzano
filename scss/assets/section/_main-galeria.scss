@@ -5,7 +5,6 @@
   
 .titulo {
   display: flex;
-  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   color: white;
@@ -21,6 +20,8 @@
   grid-auto-rows: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-items: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  
 }
 
 .foto img {
@@ -33,7 +34,7 @@
 
   .foto img:hover {
      filter:brightness(120%);
-     color: aqua;
+     color: rgb(0, 255, 140);
   }
 
  

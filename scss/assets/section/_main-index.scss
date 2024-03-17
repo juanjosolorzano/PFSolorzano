@@ -2,21 +2,21 @@
     font-style: sans serif;
     text-transform: uppercase;
     font-size: 20px;
-    background-color: rgb(37, 114, 182); 
+    background-color: rgb(37, 114, 182);
 
-    img{
+    img {
         margin: 10px;
     }
 
-  
 
-     li {
+
+    li {
         &:hover {
             background-color: rgb(118, 187, 231);
-            
+
         }
 
-         a {
+        a {
             color: rgb(216, 245, 250);
         }
 
@@ -34,7 +34,8 @@ body {
 
 .animate__animated {
     display: flex;
-    text-transform: uppercase;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.65));
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     color: rgb(16, 196, 241);
@@ -43,19 +44,23 @@ body {
     align-items: center;
     margin: 20px;
     padding-top: 40px;
-    
+
 }
 
 article {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.65));
+    margin: auto;
+    max-width: 1200px;
+
     h2 {
         font-family: sans-serif;
         font-size: 25px;
         color: white;
         display: flex;
-        text-align: center;
+        align-items: center;
         box-sizing: border-box;
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
-        margin: 40px;
+        margin: 25px;
+
 
 
     }
@@ -148,6 +153,7 @@ article {
         color: white;
     }
 }
+
 // media querys index.html
 @media(max-width:720px) {
     .animate__animated {

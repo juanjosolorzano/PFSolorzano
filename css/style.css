@@ -23,7 +23,7 @@ body {
 
 .animate__animated {
   display: flex;
-  text-transform: uppercase;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.65));
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   color: #10c4f1;
@@ -33,15 +33,18 @@ body {
   margin: 20px;
   padding-top: 40px; }
 
-article h2 {
-  font-family: sans-serif;
-  font-size: 25px;
-  color: white;
-  display: flex;
-  text-align: center;
-  box-sizing: border-box;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
-  margin: 40px; }
+article {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.65));
+  margin: auto;
+  max-width: 1200px; }
+  article h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 25px; }
 
 .videos {
   display: flex;
@@ -134,7 +137,6 @@ article h2 {
 
 .titulo {
   display: flex;
-  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   color: white;
@@ -148,7 +150,8 @@ article h2 {
   gap: 1rem;
   grid-auto-rows: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  justify-items: center; }
+  justify-items: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)); }
 
 .foto img {
   width: 220px;
@@ -159,7 +162,7 @@ article h2 {
 
 .foto img:hover {
   filter: brightness(120%);
-  color: aqua; }
+  color: #00ff8c; }
 
 .titulo {
   display: flex;
@@ -173,14 +176,18 @@ article h2 {
   margin: 20px; }
 
 .article {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: " comienzos comienzos comienzos" " titulos titulos titulos " "el-estadio el-estadio el-estadio"; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)); }
+  .article p {
+    color: white;
+    align-items: center;
+    margin: 20px; }
   .article .titulos {
     grid-area: titulos; }
   .article .comienzos {
@@ -193,14 +200,6 @@ article h2 {
     grid-area: aside; }
   .article .aside2 {
     grid-area: aside1; }
-
-p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1rem;
-  margin: 5px; }
 
 .titulo {
   display: flex;
@@ -217,4 +216,7 @@ p {
   color: white;
   box-sizing: border-box;
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
-  margin: 20px; }
+  margin: 20px;
+  height: 100vh; }
+  .socios h2 {
+    padding-top: 10px; }
