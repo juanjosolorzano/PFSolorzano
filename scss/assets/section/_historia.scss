@@ -53,14 +53,17 @@
   .aside {
     grid-area: aside;
     padding: 15px;
+    
   }
 
 }
 
-@media(max-width:430px){
-  .aside{
-    width: 350px;
-    height: 135px;
+@media(max-width:438px){
+  .article{
+    p{
+      font-size:1rem ;
+    }
+   
   }
 
 }

@@ -144,8 +144,7 @@ article h2 {
   color: white;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 20px; }
+  align-items: center; }
 
 .galeria {
   display: grid;
@@ -202,10 +201,9 @@ article h2 {
     grid-area: aside;
     padding: 15px; }
 
-@media (max-width: 430px) {
-  .aside {
-    width: 350px;
-    height: 135px; } }
+@media (max-width: 438px) {
+  .article p {
+    font-size: 1rem; } }
 
 .titulo {
   display: flex;
@@ -216,8 +214,7 @@ article h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-   }
+  margin: 20px; }
 
 .socios {
   color: white;
@@ -225,5 +222,4 @@ article h2 {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
   margin: 20px; }
   .socios h2 {
-    padding-top: 10px; 
-  }
+    padding-top: 10px; }
