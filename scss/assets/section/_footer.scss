@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    background-color: rgb(37, 114, 182);
+    margin-bottom: 0px;
+
+    .grupo1 {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, .5fr);
+        grid-gap: 20px;
+        padding: 15px 0px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .box figure {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    img {
+        width: 100px;
+        margin: -25px;
+
+    }
+
+    h2 {
+        color: white;
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+
+
+
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        margin-right: 10px;
+        text-align: center;
+        transition: all 300ms ease;
+
+    }
+
+    li {
+        display: flex;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        margin-right: 10px;
+        text-align: center;
+        transition: all 300ms ease;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    i {
+        margin: 10px;
+    }
+
+    .grupo2 {
+        background-color: rgb(1, 9, 12);
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+    }
+}

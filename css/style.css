@@ -4,22 +4,28 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
-.navegacion {
+header .navegacion {
   font-style: sans serif;
   text-transform: uppercase;
   font-size: 20px;
-  background-color: #2572b6; }
-  .navegacion img {
-    margin: 10px; }
-  .navegacion li:hover {
-    background-color: #76bbe7; }
-  .navegacion li a {
-    color: #d8f5fa; }
+  background-color: #3e9ce9; }
+
+header img {
+  margin: 10px; }
+
+header ul {
+  background-color: #dfe9ee;
+  background: linear-gradient(rgba(210, 213, 220, 0.75), rgba(2, 6, 17, 0.25)); }
+
+header li:hover {
+  background-color: #8ac8c8; }
+
+header li .nav-link {
+  color: azure; }
 
 body {
   background-image: url(../resources/img/chule.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 
 .contenido-principal {
   align-items: center;
@@ -31,22 +37,28 @@ body {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
-  color: #10c4f1;
+  color: white;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 20px;
   padding-top: 40px; }
 
-article h2 {
-  font-family: sans-serif;
-  font-size: 25px;
-  color: white;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 25px;
-  padding-top: 30px; }
+article {
+  margin: auto;
+  max-width: 1200px; }
+  article h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    line-height: 2.2;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 25px;
+    padding-top: 30px;
+    text-align: center; }
 
 .videos {
   display: flex;
@@ -55,6 +67,61 @@ article h2 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
+
+.galeria {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 12rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  justify-items: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)); }
+
+.foto img {
+  width: 220px;
+  height: 130px;
+  border-radius: 25px;
+  border: solid 2px;
+  color: white; }
+
+.foto :hover {
+  filter: brightness(120%);
+  color: #00ff8c; }
+
+.article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)); }
+  .article p {
+    color: white;
+    align-items: center;
+    margin: 20px; }
+  .article .titulos {
+    grid-area: titulos; }
+  .article .comienzos {
+    grid-area: comienzos; }
+  .article .el-estadio {
+    grid-area: el-estadio; }
+  .article .presente {
+    grid-area: presente; }
+  .article .aside {
+    grid-area: aside;
+    padding: 15px; }
+
+@media (max-width: 438px) {
+  .article p {
+    font-size: 1rem; } }
+
+.contenido-principal {
+  color: white;
+  padding: 10px; }
+
+h2 {
+  padding-top: 1rem; }
 
 .footer {
   width: 100%;
@@ -110,116 +177,3 @@ article h2 {
     padding: 15px 10px;
     text-align: center;
     color: white; }
-
-@media (max-width: 720px) {
-  .animate__animated {
-    text-align: center;
-    justify-content: center; } }
-
-@media (max-width: 724px) {
-  .videos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; } }
-
-@media (max-width: 1024px) {
-  .footer .grupo1 {
-    width: 100%;
-    margin: auto;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 35px;
-    padding: 35px 0px;
-    justify-content: center;
-    align-items: center; } }
-
-.navegacion {
-  font-style: sans serif;
-  text-transform: uppercase;
-  font-size: 20px; }
-
-.titulo {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  color: white;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.galeria {
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 12rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  justify-items: center;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)); }
-
-.foto img {
-  width: 220px;
-  height: 130px;
-  border-radius: 25px;
-  border: solid 2px;
-  color: white; }
-
-.foto img:hover {
-  filter: brightness(120%);
-  color: #00ff8c; }
-
-.titulo {
-  display: flex;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  color: white;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 20px; }
-
-.article {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1220px;
-  margin: auto;
-  align-items: center;
-  justify-content: space-evenly;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)); }
-  .article p {
-    color: white;
-    align-items: center;
-    margin: 20px; }
-  .article .titulos {
-    grid-area: titulos; }
-  .article .comienzos {
-    grid-area: comienzos; }
-  .article .el-estadio {
-    grid-area: el-estadio; }
-  .article .presente {
-    grid-area: presente; }
-  .article .aside {
-    grid-area: aside;
-    padding: 15px; }
-
-@media (max-width: 438px) {
-  .article p {
-    font-size: 1rem; } }
-
-.titulo {
-  display: flex;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  color: white;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 20px; }
-
-.socios {
-  color: white;
-  box-sizing: border-box;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
-  margin: 20px; }
-  .socios h2 {
-    padding-top: 10px; }
