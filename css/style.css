@@ -177,3 +177,13 @@ h2 {
     padding: 15px 10px;
     text-align: center;
     color: white; }
+
+@media (max-width: 1024px) {
+  .footer .grupo1 {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 35px;
+    padding: 35px 0px;
+    justify-content: center;
+    align-items: center; } }
