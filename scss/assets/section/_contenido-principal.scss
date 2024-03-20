@@ -44,7 +44,8 @@ article {
         text-align: center;
     }
 }
-.escudo{
+
+.escudo {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -56,9 +57,7 @@ article {
 .videos {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }

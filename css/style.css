@@ -73,7 +73,6 @@ article {
 .videos {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
