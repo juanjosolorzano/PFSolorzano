@@ -3,16 +3,29 @@
     padding: 10px;
 }
 
-h2 {
-    padding-top: 1rem;
+.login {
+    display: grid;
+    justify-items: center;
 }
 
-.iframe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 5em;
+.seccion2 {
+    @extend .login;
+
+    h3 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+
+
+
+    &__iframe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-bottom: 2em;
+    }
 }

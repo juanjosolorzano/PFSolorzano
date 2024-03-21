@@ -1,11 +1,9 @@
 header {
     .navegacion {
-        font-style: sans serif;
+        font-style: $fuente-titulo;
         text-transform: uppercase;
         font-size: 20px;
-        background-color: rgb(62, 156, 233);
-
-
+        background-color: $celeste-nav;
     }
 
     img {
@@ -13,7 +11,7 @@ header {
     }
 
     ul {
-        background-color: rgb(223, 233, 238);
+        background-color: $white;
         background: linear-gradient(rgba(210, 213, 220, 0.75), rgba(2, 6, 17, 0.25));
     }
 
