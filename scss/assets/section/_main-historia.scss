@@ -1,4 +1,3 @@
-
 .article {
   display: flex;
   flex-direction: row;
@@ -8,7 +7,7 @@
   padding: 10px;
   align-items: center;
   justify-content: space-evenly;
-  
+
   p {
     color: white;
     align-items: center;
@@ -30,23 +29,23 @@
   }
 
   .presente {
-    grid-area: presente
-  };
+    grid-area: presente;
+  }
 
   .aside {
     grid-area: aside;
     padding: 15px;
-    
+
   }
 
 }
 
-@media(max-width:438px){
-  .article{
-    p{
-      font-size:1rem ;
+@media(max-width:438px) {
+  .article {
+    p {
+      font-size: 1rem;
     }
-   
+
   }
 
 }

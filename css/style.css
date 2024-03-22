@@ -60,9 +60,10 @@ body {
 
 .escudo {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-content: center; }
 
 .videos {
   display: flex;
@@ -85,7 +86,7 @@ body {
   height: 130px;
   border-radius: 25px;
   border: solid 2px;
-  color: white; }
+  color: #dfe9ee; }
 
 .foto :hover {
   filter: brightness(120%);
@@ -123,7 +124,7 @@ body {
     font-size: 1rem; } }
 
 .contenido-principal {
-  color: white;
+  color: #dfe9ee;
   padding: 10px; }
 
 .login, .seccion2 {
@@ -138,9 +139,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  flex-direction: column;
   padding-bottom: 2em; }
 
 .footer {

@@ -9,19 +9,19 @@ body {
     max-width: (100vh/0.8);
     background: $gradient;
 
-.animate__animated {
+    .animate__animated {
 
-    display: flex;
-    font-family: $fuente-titulo;
-    font-size: 60px;
-    color: white;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-    padding-top: 40px;
-}
+        display: flex;
+        font-family: $fuente-titulo;
+        font-size: 60px;
+        color: white;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        padding-top: 40px;
+    }
 
 
     h2 {
@@ -41,10 +41,7 @@ body {
 }
 
 .escudo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    @include display-flex;
 }
 
 

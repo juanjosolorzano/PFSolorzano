@@ -4,7 +4,7 @@
   grid-auto-rows: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-items: center;
-  
+
 }
 
 .foto {
@@ -13,7 +13,7 @@
     height: 130px;
     border-radius: 25px;
     border: solid 2px;
-    color: white;
+    color: $white;
   }
 
   :hover {
@@ -22,5 +22,3 @@
 
   }
 }
-
-
