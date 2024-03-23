@@ -26,7 +26,8 @@ header li .nav-link {
 
 body {
   background-image: url(https://bit.ly/3IOMFGB);
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .contenido-principal {
   align-items: center;
