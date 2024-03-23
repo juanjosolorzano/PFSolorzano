@@ -58,6 +58,9 @@ body {
     padding-top: 5rem;
     text-align: center; }
 
+div {
+  width: auto; }
+
 .escudo {
   display: flex;
   align-items: center;
@@ -94,11 +97,7 @@ body {
 
 .article {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1220px;
-  margin: auto;
-  padding: 10px;
   align-items: center;
   justify-content: space-evenly; }
   .article p {
@@ -128,8 +127,7 @@ div .col img {
   height: auto; }
 
 .contenido-principal {
-  color: #dfe9ee;
-  padding: 10px; }
+  color: #dfe9ee; }
 
 .login, .seccion2 {
   display: grid;
