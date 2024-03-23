@@ -9,7 +9,7 @@ header .navegacion {
   font-style: "Dangrek", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-  background-color: #3ed5e9; }
+  background-color: #3eade9; }
 
 header img {
   margin: 10px; }
@@ -81,16 +81,16 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-items: center; }
 
-.foto img {
+.foto img, div .col img {
   width: 220px;
   height: 130px;
   border-radius: 25px;
   border: solid 2px;
   color: #dfe9ee; }
 
-.foto :hover {
+.foto :hover, div .col :hover {
   filter: brightness(120%);
-  color: #00ff8c; }
+  color: #4f2ccf; }
 
 .article {
   display: flex;
@@ -122,6 +122,10 @@ body {
 @media (max-width: 438px) {
   .article p {
     font-size: 1rem; } }
+
+div .col img {
+  width: auto;
+  height: auto; }
 
 .contenido-principal {
   color: #dfe9ee;
@@ -164,7 +168,7 @@ body {
     width: 100px;
     margin: -25px; }
   .footer h2 {
-    color: white;
+    color: #dfe9ee;
     display: flex;
     font-size: 20px;
     justify-content: center; }
@@ -184,7 +188,7 @@ body {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: white;
+    color: #dfe9ee;
     margin-right: 10px;
     text-align: center;
     transition: all 300ms ease;
@@ -197,7 +201,7 @@ body {
     background-color: #01090c;
     padding: 15px 10px;
     text-align: center;
-    color: white; }
+    color: #dfe9ee; }
 
 @media (max-width: 1024px) {
   .footer .grupo1 {

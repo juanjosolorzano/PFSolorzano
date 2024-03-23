@@ -1,0 +1,10 @@
+div .col {
+    @extend .foto;
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+
+}
